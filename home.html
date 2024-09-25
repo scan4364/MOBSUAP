@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        button {
+            padding: 100px 200px; /* Aumenta o tamanho dos botões */
+            font-size: 80px; /* Aumenta o tamanho do texto */
+            border-radius: 10px; /* Cantos arredondados para melhor aparência em celular */
+            border: none;
+            background-color: #4CAF50; /* Cor do botão */
+            color: white; /* Cor do texto */
+        }
+
+        button:hover {
+            background-color: #45a049; /* Cor ao passar o mouse (em caso de navegação desktop) */
+        }
+    </style>
+    <script>
+        
+        function irParaPassageiro() {
+            window.location.href = 'psg.html';
+        }
+        function irParaMotorista() {
+            window.location.href = 'mtr.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <button onclick="irParaPassageiro()">Passageiro </button>
+        <button onclick="irParaMotorista()" >Motorista</button>
+    </div>
+</body>
+</html>

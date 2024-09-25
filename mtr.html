@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #28a745;
+        }
+
+        .container {
+            background-color: #28a745;
+            padding: 20px;
+            border-radius: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .input-box {
+            background-color: #ededed;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            color: black;
+            font-size: 16px;
+        }
+
+        .input-box input,
+        .input-box select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #vehicle-plate {
+            width: auto;
+        }
+
+        .vehicle-options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .vehicle-option {
+            background-color: #ededed;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .vehicle-option.selected {
+            background-color: #4d4dd4;
+            color: white;
+        }
+
+        .button-group {
+            margin-top: 20px;
+        }
+
+        .button-group .voltar {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ed2222;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button-group .start {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4d4dd4;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input-box">
+            <label for="vehicle-plate">Placa do Veículo:</label>
+            <input type="text" id="vehicle-plate" placeholder="Digite a placa">
+        </div>
+
+        <div class="input-box">
+            <label for="itinerary">Origem:</label>
+            <select id="itinerary">
+                <option value="" disabled selected>Escolha a origem</option>
+                <option value="Avenida Agamenon Magalhães">Avenida Agamenon Magalhães</option>
+                <option value="Avenida Mascarenhas de Morais">Avenida Mascarenhas de Morais</option>
+                <option value="Avenida Boa Viagem">Avenida Boa Viagem</option>
+                <option value="Avenida Recife">Avenida Recife</option>
+                <option value="Avenida Norte (Avenida Cruz Cabugá)">Avenida Norte (Avenida Cruz Cabugá)</option>
+                <option value="Avenida Conde da Boa Vista">Avenida Conde da Boa Vista</option>
+                <option value="Avenida Domingos Ferreira">Avenida Domingos Ferreira</option>
+                <option value="Avenida Caxangá">Avenida Caxangá</option>
+                <option value="Avenida Governador Carlos de Lima Cavalcanti">Avenida Governador Carlos de Lima Cavalcanti</option>
+                <option value="Rua da Aurora">Rua da Aurora</option>
+                <option value="Avenida Professor Joaquim Cavalcanti">Avenida Professor Joaquim Cavalcanti</option>
+                <option value="Avenida Herculano Bandeira">Avenida Herculano Bandeira</option>
+                <option value="Avenida Beira Rio">Avenida Beira Rio</option>
+                <option value="Avenida Governador Agamenon Magalhães (Extensão Norte-Sul)">Avenida Governador Agamenon Magalhães (Extensão Norte-Sul)</option>
+                <option value="Avenida Antônio de Góes">Avenida Antônio de Góes</option>
+                <option value="Avenida Rui Barbosa">Avenida Rui Barbosa</option>
+                <option value="Avenida Sul (Avenida Engenheiro José Estelita)">Avenida Sul (Avenida Engenheiro José Estelita)</option>
+                <option value="Avenida Rosa e Silva">Avenida Rosa e Silva</option>
+                <option value="Avenida General San Martin">Avenida General San Martin</option>
+                <option value="Avenida Doutor José Rufino">Avenida Doutor José Rufino</option>
+                <option value="Estrada do Arraial">Estrada do Arraial</option>
+                <option value="Estrada dos Remédios">Estrada dos Remédios</option>
+                <option value="Estrada do Encanamento">Estrada do Encanamento</option>
+                <option value="Rua Real da Torre">Rua Real da Torre</option>
+                <option value="Rua do Sol">Rua do Sol</option>
+                <option value="Rua da Concórdia">Rua da Concórdia</option>
+                <option value="Rua Dom Bosco">Rua Dom Bosco</option>
+                <option value="Rua da Imperatriz">Rua da Imperatriz</option>
+                <option value="Rua Visconde de Suassuna">Rua Visconde de Suassuna</option>
+                <option value="Rua Amélia">Rua Amélia</option>
+            </select>
+        </div>
+
+        <div class="input-box">
+            <label for="itinerary">Destino:</label>
+            <select id="itinerary">
+                <option value="" disabled selected>Escolha o destino</option>
+                <option value="Campary Group">Campary Group</option>
+                <option value="Sulog">Sulog</option>
+                <option value="Sua Graneis">Sua Graneís</option>
+                <option value="European Energy">European Energy</option>
+                <option value="TEGMA GESTÃO LOGÍSTICA S/A, Rua 02 Norte, nº 700, Ipojuca, PE">TEGMA GESTÃO LOGÍSTICA S/A - Rua 02 Norte, nº 700, Ipojuca, PE</option>
+                <option value="TEMAPE - TERMINAIS MARÍTIMOS DE PERNAMBUCO S/A, Avenida Portuária, s/n, Ipojuca, PE">TEMAPE - TERMINAIS MARÍTIMOS DE PERNAMBUCO S/A - Avenida Portuária, s/n, Ipojuca, PE</option>
+                <option value="UNILEVER, Rodovia PE-60, km 12, s/n, Engenho do Meio, 55590-000, Ipojuca, PE">UNILEVER - Rodovia PE-60, km 12, s/n, Engenho do Meio, 55590-000, Ipojuca, PE</option>
+                <option value="URBANO AGROINDUSTRIAL, Rodovia PE-60, Zona Industrial, Gleba Oeste, s/n, Cabo de Santo Agostinho, PE">URBANO AGROINDUSTRIAL - Rodovia PE-60, Zona Industrial, Gleba Oeste, s/n, Cabo de Santo Agostinho, PE</option>
+                <option value="TERMOPERNAMBUCO S/A, Avenida Portuária, 55590-972, Ipojuca, PE">TERMOPERNAMBUCO S/A - Avenida Portuária, 55590-972, Ipojuca, PE</option>
+                <option value="DECAL BRASIL, Avenida Portuária, s/n, Ipojuca, PE">DECAL BRASIL - Avenida Portuária, s/n, Ipojuca, PE</option>
+                <option value="E-LOG PÁTIO DE TRIAGEM, Avenida TDR Norte, nº 8466, 54500-000 Cabo de Santo Agostinho, PE">E-LOG PÁTIO DE TRIAGEM - Avenida TDR Norte, nº 8466, 54500-000 Cabo de Santo Agostinho, PE</option>
+                <option value="TOC EMPREENDIMENTOS, Lote de Terreno E1, Estrada TDR Sul, s/n, 55590-000 Ipojuca, PE">TOC EMPREENDIMENTOS - Lote de Terreno E1, Estrada TDR Sul, s/n, 55590-000 Ipojuca, PE</option>
+                <option value="TRANSPAZ - TRANSPORTE RODOVIÁRIO DE CARGAS, Rodovia PE-60, 55590-000 Ipojuca, PE">TRANSPAZ - TRANSPORTE RODOVIÁRIO DE CARGAS - Rodovia PE-60, 55590-000 Ipojuca, PE</option>
+                <option value="CONE S/A, Rodovia BR 101, Km 96,4, Condomínio CONE MULTIMODAL, Cabo de Santo Agostinho, PE">CONE S/A - Rodovia BR 101, Km 96,4, Condomínio CONE MULTIMODAL, Cabo de Santo Agostinho, PE</option>
+                <option value="COPAGAZ DISTRIBUIDORA DE GÁS S/A, Avenida Portuária, s/n, Ipojuca-PE. CEP: 55.594-900">COPAGAZ DISTRIBUIDORA DE GÁS S/A - Avenida Portuária, s/n, Ipojuca-PE. CEP: 55.594-900</option>
+                <option value="CRISTALPET DO BRASIL INDÚSTRIA DE EMBALAGENS LTDA, Rua José Conrado, nº 7988, Engenho Serraria, Cabo de Santo Agostinho, PE">CRISTALPET DO BRASIL INDÚSTRIA DE EMBALAGENS LTDA - Rua José Conrado, nº 7988, Engenho Serraria, Cabo de Santo Agostinho, PE</option>
+       
+            </select>
+        </div>
+
+        <div class="input-box">
+            <label for="seats">Vagas disponíveis:</label>
+            <select id="seats">
+                <option value="" disabled selected>Quantidade de vagas</option>
+                <option value="1 Vaga">1</option>
+                <option value="3 Vaga">2</option>
+                <option value="4 Vaga">3</option>
+                <option value="5 Vaga">4</option>
+                <option value="6 Vaga">5</option>
+                <option value="7 Vaga">6</option>
+                <option value="8 Vaga">8</option>
+                <option value="9 Vaga">9</option>
+                <option value="10 Vaga">10</option>
+                <option value="11 Vaga">11</option>
+                <option value="12 Vaga">12</option>
+            </select>
+        </div>
+
+        <div class="vehicle-options">
+            <div class="vehicle-option" onclick="selectVehicle(this)">Ônibus</div>
+            <div class="vehicle-option" onclick="selectVehicle(this)">Carro</div>
+            <div class="vehicle-option" onclick="selectVehicle(this)">Van</div>
+        </div>
+
+        <div class="button-group">
+            <button class="voltar" onclick="window.location.href='home.html'">Voltar</button>
+            <button class="start" onclick="window.location.href ='vji.html'">Iniciar Viagem</button>
+        </div>
+    </div>
+
+    <script>
+        function selectVehicle(element) {
+            const options = document.querySelectorAll('.vehicle-option');
+            options.forEach(option => option.classList.remove('selected'));
+
+            element.classList.add('selected');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispositivos Móveis Mockup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            background-color: #008000;
+            padding: 50px;
+        }
+
+        .card {
+            width: 80%;
+            cursor: pointer;
+            border: none;
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        } 
+
+        .card:hover {
+            background-color: #f0f0f0;
+        }
+
+        .home-button {
+            width: 50%;
+            cursor: pointer;
+            border: none;
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .route {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .placeholder {
+            font-size: 16px;
+            color: gray;
+            margin-bottom: 5px;
+        }
+
+        .slots {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+    <script>
+        function irParaVj1() {
+            window.location.href = 'vj1.html';
+        }
+        function irParaVj2() {
+            window.location.href = 'vj2.html';
+        }
+        function irParaVj3() {
+            window.location.href = 'vj3.html';
+        }
+        function irParaVj4() {
+            window.location.href = 'vj4.html';
+        }
+        function irParaVj5() {
+            window.location.href = 'vj5.html';
+        }
+        function irParaVj6() {
+            window.location.href = 'vj6.html';
+        }
+        function irParaHome() {
+            window.location.href = 'home.html';
+        }
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <button class="card" onclick="irParaVj1()">
+            <div>
+                <div class="route">RECIFE - SUAPE</div>
+                <div class="placeholder">PRA4K23</div>
+                <div class="slots">Vagas: 3</div>
+            </div>
+        </button>
+
+        <button class="card" onclick="irParaVj2()">
+            <div>
+                <div class="route">RECIFE - SUAPE</div>
+                <div class="placeholder">QAX3M45</div>
+                <div class="slots">Vagas:2 </div>
+            </div>
+        </button>
+
+        <button class="card" onclick="irParaVj3()">
+            <div>
+                <div class="route">RECIFE - SUAPE</div>
+                <div class="placeholder">BND7H19</div>
+                <div class="slots">Vagas: 3</div>
+            </div>
+        </button>
+
+        <button class="card" onclick="irParaVj4()">
+            <div>
+                <div class="route">RECIFE - SUAPE</div>
+                <div class="placeholder">GTE2C87</div>
+                <div class="slots">Vagas: 3</div>
+            </div>
+        </button>
+
+        <button class="card" onclick="irParaVj5()">
+            <div>
+                <div class="route">RECIFE - SUAPE</div>
+                <div class="placeholder">KJM6V34</div>
+                <div class="slots">Vagas: 3</div>
+            </div>
+        </button>
+
+        <button class="card" onclick="irParaVj6()">
+            <div>
+                <div class="route">RECIFE - SUAPE</div>
+                <div class="placeholder">LRQ8S02</div>
+                <div class="slots">Vagas: 3</div>
+            </div>
+        </button>
+
+        <button class="home-button" onclick="irParaHome()">
+            <div>
+                <div class="route">Retornar para o início</div>
+                <div class="placeholder"></div>
+                <div class="slots"></div>
+            </div>
+        </button>
+    </div>
+</body>
+</html>
