@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Simulação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
         body, html {
             height: 100%;
@@ -10,32 +12,75 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
         }
 
         .container {
             display: flex;
             flex-direction: column;
             gap: 20px;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
         }
 
         button {
-            padding: 100px 200px; /* Aumenta o tamanho dos botões */
-            font-size: 80px; /* Aumenta o tamanho do texto */
-            border-radius: 10px; /* Cantos arredondados para melhor aparência em celular */
+            padding: 20px 50px;
+            font-size: 24px;
+            font-weight: 500;
+            border-radius: 12px;
             border: none;
-            background-color: #4CAF50; /* Cor do botão */
-            color: white; /* Cor do texto */
+            background-color: #0d5546;
+            color: white;
+            transition: background-color 0.3s ease, transform 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 90%;
         }
 
         button:hover {
-            background-color: #45a049; /* Cor ao passar o mouse (em caso de navegação desktop) */
+            background-color: #0d5546;
+            transform: scale(1.05);
+        }
+
+        button img {
+            width: 30px;
+            height: 30px;
+        }
+
+        footer {
+            background-color: #0d5546;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 600px) {
+            button {
+                padding: 15px 30px;
+                font-size: 18px;
+            }
+
+            button img {
+                width: 25px;
+                height: 25px;
+            }
         }
     </style>
     <script>
-        
         function irParaPassageiro() {
             window.location.href = 'psg.html';
         }
+
         function irParaMotorista() {
             window.location.href = 'mtr.html';
         }
@@ -43,8 +88,18 @@
 </head>
 <body>
     <div class="container">
-        <button onclick="irParaPassageiro()">Passageiro </button>
-        <button onclick="irParaMotorista()" >Motorista</button>
+        <img style="margin-top: -50%; width:350px" src="scl.png" alt="Ícone SUAPE">
+        <h1>Escolha sua função</h1>
+        <button onclick="irParaPassageiro()">
+            <img src="pss.png" alt="Ícone Passageiro"> Passageiro
+        </button>
+        <button onclick="irParaMotorista()">
+            <img src="vl.png" alt="Ícone Motorista"> Motorista
+        </button>
+        <footer style=" font-size: 8px; ">
+            <p>© 2024 SUAPE. Todos os direitos reservados.</p>
+        </footer>
     </div>
+    
 </body>
 </html>

@@ -3,152 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dispositivos Móveis Mockup</title>
+    <title>Passageiro - Rotas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d5546;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
         }
 
         .container {
             display: flex;
-            align-items: center;
             flex-direction: column;
+            align-items: center;
             width: 100%;
-            background-color: #008000;
-            padding: 50px;
+            padding: 20px;
+            max-width: 600px;
+        }
+
+        .containerr {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
         }
 
         .card {
-            width: 80%;
+            width: 100%;
             cursor: pointer;
             border: none;
             background-color: white;
-            border-radius: 5px;
+            border-radius: 10px;
             padding: 20px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        } 
+            color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
 
         .card:hover {
             background-color: #f0f0f0;
-        }
-
-        .home-button {
-            width: 50%;
-            cursor: pointer;
-            border: none;
-            background-color: white;
-            border-radius: 5px;
-            padding: 20px;
-            margin-bottom: 10px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transform: scale(1.03);
         }
 
         .route {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 5px;
+            font-size: 20px;
+            font-weight: 700;
         }
 
         .placeholder {
             font-size: 16px;
             color: gray;
-            margin-bottom: 5px;
+            margin: 5px 0;
+            font-weight: 600;
         }
 
         .slots {
             font-size: 14px;
             color: #555;
         }
+
+        .home-button {
+            margin-top: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s;
+            
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ed2222;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .home-button:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.03);
+        }
+        .headerr{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:#bdbdbd96;
+            
+            text-align: center;
+            top: 0;
+            width: 101%;
+            height: 75px;
+
+            position: fixed;
+            font-family:Arial;
+        }
+
+        .headerr .containerr h1 {
+            margin: 0;
+        }
+        
     </style>
     <script>
         function irParaVj1() {
             window.location.href = 'vj1.html';
         }
         function irParaVj2() {
-            window.location.href = 'vj2.html';
+            window.location.href = 'vj1.html';
         }
         function irParaVj3() {
-            window.location.href = 'vj3.html';
+            window.location.href = 'vj1.html';
         }
         function irParaVj4() {
-            window.location.href = 'vj4.html';
+            window.location.href = 'vj1.html';
         }
         function irParaVj5() {
-            window.location.href = 'vj5.html';
+            window.location.href = 'vj1.html';
         }
         function irParaVj6() {
-            window.location.href = 'vj6.html';
+            window.location.href = 'vj1.html';
         }
         function irParaHome() {
             window.location.href = 'home.html';
         }
-
     </script>
 </head>
 <body>
-    <div class="container">
-        <button class="card" onclick="irParaVj1()">
-            <div>
-                <div class="route">RECIFE - SUAPE</div>
-                <div class="placeholder">PRA4K23</div>
-                <div class="slots">Vagas: 3</div>
+    <header  class="headerr">
+        <div style="margin-top: -10px;">
+            <div class="containerr">
+                <h1><img src="pss.png" alt="Ícone Passageiro" style="width: 25px;height: 25px"> Passageiro</h1>
             </div>
+        </div>
+            
+    </header>
+    <div class="container" style="padding-top: 6cm;">
+        <button class="card" onclick="irParaVj1()">
+            <div class="route">RECIFE - SUAPE</div>
+            <div class="placeholder">PRA4K23</div>
+            <div class="slots">Vagas: 3</div>
         </button>
 
         <button class="card" onclick="irParaVj2()">
-            <div>
-                <div class="route">RECIFE - SUAPE</div>
-                <div class="placeholder">QAX3M45</div>
-                <div class="slots">Vagas:2 </div>
-            </div>
+            <div class="route">CAMARAGIBE - SUAPE</div>
+            <div class="placeholder">QAX3M45</div>
+            <div class="slots">Vagas: 2</div>
         </button>
 
         <button class="card" onclick="irParaVj3()">
-            <div>
-                <div class="route">RECIFE - SUAPE</div>
-                <div class="placeholder">BND7H19</div>
-                <div class="slots">Vagas: 3</div>
-            </div>
+            <div class="route">OLINDA - SEU GRANÉL</div>
+            <div class="placeholder">BND7H19</div>
+            <div class="slots">Vagas: 3</div>
         </button>
 
         <button class="card" onclick="irParaVj4()">
-            <div>
-                <div class="route">RECIFE - SUAPE</div>
-                <div class="placeholder">GTE2C87</div>
-                <div class="slots">Vagas: 3</div>
-            </div>
+            <div class="route">PAULISTA - SULOG</div>
+            <div class="placeholder">GTE2C87</div>
+            <div class="slots">Vagas: 3</div>
         </button>
 
         <button class="card" onclick="irParaVj5()">
-            <div>
-                <div class="route">RECIFE - SUAPE</div>
-                <div class="placeholder">KJM6V34</div>
-                <div class="slots">Vagas: 3</div>
-            </div>
+            <div class="route">RECIFE - CAMPARI GRUPE</div>
+            <div class="placeholder">KJM6V34</div>
+            <div class="slots">Vagas: 3</div>
         </button>
 
         <button class="card" onclick="irParaVj6()">
-            <div>
-                <div class="route">RECIFE - SUAPE</div>
-                <div class="placeholder">LRQ8S02</div>
-                <div class="slots">Vagas: 3</div>
-            </div>
+            <div class="route">RECIFE - EUROPEN ENERGY</div>
+            <div class="placeholder">LRQ8S02</div>
+            <div class="slots">Vagas: 3</div>
         </button>
 
         <button class="home-button" onclick="irParaHome()">
-            <div>
-                <div class="route">Retornar para o início</div>
-                <div class="placeholder"></div>
-                <div class="slots"></div>
-            </div>
+            <div>Voltar</div>
         </button>
     </div>
 </body>

@@ -4,37 +4,68 @@
     <meta charset="UTF-8" />
     <title>title</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: Arial, sans-serif;
-            background-color: #2e8540;
-            height: 100vh;
+            background-color: #0d5546;
+            width: auto;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
         }
 
         .container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #2e8540;
+            background-color: #0d5546;
             width: 100%;
-            max-width: 400px;
             padding: 20px;
             text-align: center;
         }
 
-        .image-placeholder {
-            background-color: #c4c4c4; /* Light grey */
-            height: 300px;
-            margin: 0 auto;
-            border-radius: 10px;
+        .container h1 {
+            color: #fafafa;
+            font-size: 40px;
+            font-family: Arial, sans-serif;
+            width: 400px;
+        }
+
+        .image-placeholder img {
+            width: 90vw;
+            max-width: 600px;
+            height: auto;
+        }
+
+        .chatbox {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .chatbox textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .chatbox button {
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            font-size: 1.2rem;
+            background-color: #4d4dd4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .chatbox button:hover {
+            background-color: #4d4dd4;
         }
     </style>
 </head>
@@ -42,7 +73,12 @@
     <div class="container">
         <h1>Sua viagem começou!</h1>
         <div class="image-placeholder">
-            <img src="map.png" alt="foto SCAN" style="align-items: center;border-radius: 10px;" height="290px">
+            <img src="map.png" alt="foto SCAN" style="align-items: center;border-radius: 20px;" height="80%">
+        </div>
+        
+        <div class="chatbox">
+            <textarea placeholder="Digite sua mensagem..."></textarea>
+            <button>Enviar</button>
         </div>
     </div>
 </body>

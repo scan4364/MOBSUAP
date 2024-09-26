@@ -12,11 +12,11 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #28a745;
+            background-color: #0d5546;
         }
 
         .container {
-            background-color: #28a745;
+            background-color: #0d5546;
             padding: 20px;
             border-radius: 20px;
             width: 300px;
@@ -71,6 +71,10 @@
         }
 
         .button-group .voltar {
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s;
+            
             padding: 10px 20px;
             margin: 5px;
             border: none;
@@ -92,10 +96,29 @@
             cursor: pointer;
         }
 
+        .headerr{
+            align-items: center; 
+            background-color:#bdbdbd96;
+            
+            text-align: center;
+            top: 0;
+            width: 101%;
+
+            position: fixed;
+            font-family:Arial;
+        }
         
     </style>
 </head>
 <body>
+    <header  class="headerr">
+        <div style="margin-top: -10px;">
+            <div class="containerr">
+                <h1><img src="bvl.png" alt="Ícone Passageiro" style="width: 25px;height: 25px;margin-top: 2px"> Motorista</h1>
+            </div>
+        </div>
+            
+    </header>
     <div class="container">
         <div class="input-box">
             <label for="vehicle-plate">Placa do Veículo:</label>
